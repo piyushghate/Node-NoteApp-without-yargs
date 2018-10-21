@@ -12,6 +12,10 @@ var fetchNote = () => {
   }
 }
 
+var writeJSONFile = (objstring) => {
+  fs.writeFileSync('data.json', JSON.stringify(objstring));
+}
+
 var addNote = (title, body) => {
 
   note = {
@@ -31,7 +35,7 @@ var addNote = (title, body) => {
   }
   if (x){
     objstring.push(note);
-    fs.writeFileSync('data.json', JSON.stringify(objstring));
+    writeJSONFile(objstring);
     console.log(`Note with title: ${title} and body: ${body} added!`);
   }
 }
@@ -54,7 +58,7 @@ var removeNote = (title) => {
         if (objstring[i].title === title){
           objstring.splice(i,1);
           console.log(objstring);
-          fs.writeFileSync('data.json', JSON.stringify(objstring));
+          writeJSONFile(objstring);
           console.log(`Note with title: ${title} removed!!`);
           x = false;
           break;

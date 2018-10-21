@@ -11,4 +11,4 @@ Implemented fetchNote function
 ReadNote with valid title completed
 remove note completed
 duplicate while adding completed
-writefile function --
+writeJSONfile function completed
