@@ -4,18 +4,6 @@ console.log('Starting APP file');
 const _ = require('lodash');
 
 const notes = require('./notes.js');
-// var argv = yargs;
-//
-// console.log(argv);
-
-// console.log(_.isString(true));
-// console.log(_.isString('Piyush'));
-//
-// // var res = notes.addNote(5,2);
-// console.log('Addition: ', notes.addNote(5,-2));
-//
-// var filteredArray = _.uniq(['Piyush',2,3,1,1,1,1,1,1,1,'Piyush']);
-// console.log(filteredArray);
 
 console.log(process.argv);    // helps to get input from user!
 
