@@ -1,0 +1,14 @@
+This is notes app using NodeJS(process.argv and not yargs)
+App.js can import function from notes.js
+All the functions are working -- checked
+conver the function to arrow function
+hardcoding title and body to add Command
+hardcoding title to remove
+hardcoding title to read
+study about Json format
+Implement Json file to addNote - go through the json.js file. - done.
+Implemented fetchNote function
+ReadNote with valid title completed
+remove note completed
+duplicate while adding completed
+writefile function --
